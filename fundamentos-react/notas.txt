@@ -1,0 +1,61 @@
+React
+
+Es una libreria de JS ,
+una libreria es una coleccion de procesos almacenados en objetos o modulos, es decir codigo, que
+aceleran  tu flujo de trabajo, dado que reciclas algo que alguien mas hizo por ti.
+
+react esta basado en componentes.
+Estos componentes se encargan como de encerrar o encapsular 2 cosas:
+	- Funcionalidad.
+		La funcionalidad significa que cada componente tiene un proposito y una funci�n.
+		Lo interesante de esto es que al asignarle una tarea a cada componente, cada vez que queremos solucionar
+		la misma tarea, podemos reciclar el mismo componente que antes habiamos creado.
+	- Y estado.
+		Cada componente guarda su propio estado, esto es su propia informaci�n necesaria para saber como debe
+		representarse en la pantalla el componente, que datos mostrar, que elementos usar, entre otras cosas que depende
+		del estado mismo.
+
+REACT es para todo:
+crear Paginas web con REACT la libreria de JS
+crear aplicaciones moviles con REACT NATIVE
+crear experiencias de realidad virtual con REACT VIRTUAL REALITY o REACT BEAR.
+se puede hacer que REACT funcione con tu lenguaje del Backend.
+
+REACT optimiza el rendimiento de tu aplicaci�n:
+	Virtual DOM para poder acelerar las actualizaciones de la p�gina web.
+	Gana en:
+	Rendimiento, ocupar menos recursos para hacer cosas mas rapidas.
+	Velocidad,
+
+React:
+	Libreria para la UI	
+	Muy popular
+	Flexible
+	Rendimeinto y velocidad
+
+---------------------------------
+Mi primer componente-
+---------------------------------
+La forma mas sencilla de representar un componente es a travez de una función  
+que retorne la representación del componente, ya sea con otros componentes o 
+con elementos HTML en caso que estemos trabajando con una página web.
+
+// Componente Funcional : Representación de un componente a travez de una función
+function MiComponente() {
+  return <p>Hola Mundo</p>;
+}
+
+asi como este existe su alternativo basado en clases de JS (Los componenetes de clases).
+
+// Componente de clase : Representación de un componente a travez de clases.
+class MiComponenteDeClase extends Component{
+  render() {
+    return <p>Hola mundo desde una clase</p>;
+  }    
+}
+
+Ambos los componentes funcionales y de clases son las formas a travez de las cuales podemos representar un componente.
+Cada una de estas formas tienen sus pros y sus contras, ademas de sus limitaciones.
+
+la principal caracteristica que distingue a un componente de clases es que tiene un metodo RENDER() 
+que retorna lo que debe mostrar dicho componente o como se debe representar este componente dentro de la página web.
