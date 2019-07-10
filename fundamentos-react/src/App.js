@@ -24,7 +24,7 @@ class MiComponenteDeClase extends Component{
  * Cada componente debe buscar ser su propio mundo y no debera usar información externa a el mismo.
  * 
  * Props, en terminos tecnicos las props en REACT son propiedades de creación del componente. Es decir, información que
- * establecemos para un componente cuando lo creamos. Esto es la forma a trabez de lo cual un componente padre pasa información
+ * establecemos para un componente cuando lo creamos. Esto es la forma a travez de lo cual un componente padre pasa información
  * hacia los componentes hijos.
  * 
  * Toda la información que el componente necesita del exterior la tiene que recibir via PROPS.
@@ -56,6 +56,26 @@ class Eclass extends Component{
   }    
 }
 //----------FIN 02---------------------------------
+// 03. JSX
+//-------------------------------------------------
+function F(props) {
+  console.log(props.children);
+  return <p>Hola {props.nombre} Componente C</p>;
+}
+function G(props) {
+  return props.children;
+}
+/**
+ * Hemos estado utilizando expresiones de JS dentro de llaves {props.nombre}, las llaves son los operadores que nos
+ * permite especificar expresiones de JS dentro de JSX. Esto quiere decir que dentro de las llaves puedes colocar 
+ * cualquier código de JS valido.
+ * 
+ * Lo que sucede dentro de las llaves es que se evalua, y si retorna algo, ese algo se insertara en ese punto
+ * de la interfaz, es como imprimir la expresión.
+ * Tambien podemos enviar funciones de JS como PROPS hacia nuestro componente.
+ */
+//----------FIN 03---------------------------------
+
 // function App() {
 //   return (
 //     <div className="App">
@@ -89,6 +109,13 @@ class App extends Component {
       <C nombre={nombreProp} />
       <D nombre="Props Jherson" />
       <Eclass nombre={nombreProp}/>
+
+      <F nombre={nombreProp} >
+        <p>Hola!</p>
+      </F>
+      <G nombre={nombreProp} >
+        <p>Hola!</p>
+      </G>
     </div>
     );
   }

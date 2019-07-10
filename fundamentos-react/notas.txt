@@ -59,3 +59,33 @@ Cada una de estas formas tienen sus pros y sus contras, ademas de sus limitacion
 
 la principal caracteristica que distingue a un componente de clases es que tiene un metodo RENDER() 
 que retorna lo que debe mostrar dicho componente o como se debe representar este componente dentro de la página web.
+
+-----------------------------
+JSX
+-----------------------------
+Para representar las interfaces de un componente utilizamos JSX, una extensión de JS que nos permite representar 
+los elementos de REACT que vamos a crear usando una sintaxis similar a HTML.
+
+En estos ejercicios ya utilizamos JSX para representar tanto nuestro componentes como componentes de HTML.
+
+En JSX creamos elementos de REACT colocando el nombre del componente dentro de los carcater "<" y ">",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
